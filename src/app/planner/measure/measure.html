@@ -1,8 +1,8 @@
 <div class="container-fluid">
   <!-- <div class="panel-group" id="accordion"> -->
-  <div class="text-center" style="color: red;"><h1>Proposed OPI</h1></div>      
+  <div class="text-center" style="color: red;"><h1>Operational KPIs</h1></div>      
   <div class="panel">
-    <div class="panel-heading background-3"><span style="cursor:pointer;" data-toggle="collapse"  href="#collapse1">Edit Section</span>
+    <div class="panel-heading background-3"><span style="cursor:pointer;" data-toggle="collapse"  href="#collapse1">Add measures</span>
       <span class="pull-right" style="cursor:pointer" data-toggle="tooltip" data-placement="auto" title="collapse">
         <i class="glyphicon glyphicon-collapse-up" data-toggle="collapse"  href="#collapse1"></i>
       </span>
@@ -45,7 +45,7 @@
             </div>
             <div class="col-lg-6 col-xs-12 col-sm-12">
               <div class="form-group">
-                <label>OPI</label>
+                <label>Operational KPI</label>
                 <textarea class="form-control" rows="3" formControlName="opi"></textarea>
               </div>
             </div>
@@ -108,7 +108,7 @@
             </div>
             <div class="col-lg-6 col-xs-12 col-sm-12 form-check">
               <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" formControlName="approvalRequired" >
+                <input type="checkbox" class="form-check-input" formControlName="approvalRequired" ><span style="color:red;">*</span>
                 Approval Required
               </label>
             </div>
@@ -253,7 +253,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Assign To</h4>
+          <h4 class="modal-title">Set targets</h4>
         </div>
         <div class="modal-body" *ngIf="selectedMeasure">
           <div class="row" *ngIf="prev">
@@ -298,7 +298,7 @@
                       </ng-container>
                       <td>
                         <div class="input-group">
-                          <div class="input-group-addon">Estimate Cost</div>
+                          <div class="input-group-addon">Estimated Cost</div>
                           <input type="text" class="form-control" formControlName="estimatedCost" style="width:50%" id="exampleInputAmount">
                         </div>
                       </td>
